@@ -24,6 +24,8 @@ public class MainActivity extends ListActivity {
         setListAdapter(adapter);
         
         //���������Ԫ��
+        adapter.add(new ListCellData(this, "SlidingDrawer",
+        		new Intent(this, ActivitySlidingDrawer.class)));
         adapter.add(new ListCellData(this, "Animation",
         		new Intent(this, ActivityAnimation.class)));
         adapter.add(new ListCellData(this, "Menu",
